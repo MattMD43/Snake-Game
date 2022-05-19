@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snejk</title>
+    <style>
+
+        html {
+            box-sizing: border-box;
+            color: white;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        body { background: #D9946C;
+               text-align: center;}
+
+        .control {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            font-size: 1.4em;
+        }
+
+        h2 {
+            text-align: center;
+            text-shadow: 1px 2px 1px #a61731, 2px 0px 2px #07b5e4;
+
+        }
+
+        button {
+            padding: .3em .6em;
+            font-size: 1.2em;
+            background-color: #A61731;
+            text-shadow: 1px 2px 1px #a61731, 2px 0px 2px #07b5e4;
+            color: white;
+            border-radius: 0.8em;
+            cursor: pointer;
+            align-self:center;
+        }
+
+
+        canvas {
+            border: 5px solid #A61731;
+        }
+    </style>
+</head>
+ <body>
+     <section class="control">
+         <h2 class="heading">Tvoje skore je: <span class="muchmuch"></span></h2>
+         <button class="starter">Start</button>
+     </section>
+     <canvas width="600" height="600"></canvas>
+<script src="./snake.js"></script>
+</body>
+</html>
